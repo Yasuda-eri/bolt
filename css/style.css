@@ -7,6 +7,7 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .clearfix:after {
@@ -52,11 +53,14 @@ a {
 .button-contact:hover {
 	cursor: pointer;
   color: #333;
-  transition: all  0.3s ease;
+}
+
+main {
+  padding-top: 70px;
 }
 
 .inner-theme {
-  padding: 320px 0 250px 0;
+  padding: 250px 0 250px 0;
 }
 
 h1 {
@@ -69,26 +73,19 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  font-size: 30px;
-}
-
-.theme-h2 {
+.theme-text {
   color: #c0c0c0;
   font-family: 'Raleway';
   margin-top: 20px;
 }
 
-h3 {
+h2 {
   font-size: 24px;
 }
 
 .wrap-what {
   background-color: #74cfae;
   width: 100%;
-}
-
-.inner-what {
   padding: 50px 0 0 0;
 }
 
@@ -96,31 +93,26 @@ h3 {
   float: right;
 }
 
-.what-img-phone {
-  box-sizing: border-box;
-  float: left;
-}
 
-.what-h3 {
+.what-h2 {
   box-sizing: border-box;
   color: #fff;
   font-family: 'Raleway';
-  margin: 0px 0 35px 350px;
-  text-align: center;
+  margin-left: 150px;
 }
 
 .what-text {
+  box-sizing: border-box;
   color: #fff;
   font-size: 20px;
-  margin: 0 0 0 350px;
-  text-align: center;
+  margin: 35px 0 0 150px;
 }
 
 .inner-work {
   padding:60px 0 70px 0;
 }
 
-.work-h3 {
+.work-h2 {
   font-family: 'Raleway';
   margin-bottom: 40px;
 }
@@ -135,14 +127,12 @@ h3 {
   box-sizing: border-box;
   margin-left: 100px;
   opacity: 0.7;
-  width: 33.33333333%;
-  width:calc(33.3333333% - 200px / 3)
+  transition: all  0.3s ease;
 }
 
 .work-img:hover {
   cursor: pointer;
   opacity: 1;
-  transition: all  0.3s ease;
 }
 
 .work-img:first-child,
@@ -162,7 +152,6 @@ h3 {
 
 .work-text {
   align-self: flex-start;
-  margin-right: 90px;
   font-size: 20px;
 }
 
@@ -171,20 +160,21 @@ h3 {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
+  margin-left: 90px;
   padding: 14px 20px;
+  transition: all  0.3s ease;
 } 
 
 .button-email:hover {
   cursor: pointer;
   color: #333;
-  transition: all  0.3s ease;
 }
 
 .inner-skills {
   padding: 70px 0 100px 0;
 }
 
-.skills-h3 {
+.skills-h2 {
   color: #fff;
   font-family: 'Raleway';
 }
@@ -217,16 +207,19 @@ h3 {
   padding: 200px 0 200px 0;
 }
 
+.a-icon-nav {
+  padding: 30px 0 30px 0;
+  transition: all  0.3s ease;
+}
+
 .icon-nav {
   color: #74cfae;
   font-size: 2em;
   width: 185px;
-  padding: 20px 0 20px 0;
 }
 
-.icon-nav:hover {
+.a-icon-nav:hover {
   background-color: #fff;
-  transition: all  0.3s ease;
 }
 
 .footer {
