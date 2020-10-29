@@ -20,6 +20,7 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index:9999;
 }
 
 .inner {
@@ -75,7 +76,7 @@ h2 {
 .theme-h2 {
   color: #c0c0c0;
   font-family: 'Raleway';
-  padding: 20px 0 0 0;
+  margin-top: 20px;
 }
 
 h3 {
@@ -87,13 +88,16 @@ h3 {
   width: 100%;
 }
 
+.inner-what {
+  padding: 50px 0 0 0;
+}
+
 .what-float {
   float: right;
 }
 
 .what-img-phone {
   box-sizing: border-box;
-  padding: 50px 0 0 0;
   float: left;
 }
 
@@ -101,44 +105,61 @@ h3 {
   box-sizing: border-box;
   color: #fff;
   font-family: 'Raleway';
-  padding: 50px 0 35px 350px;
+  margin: 0px 0 35px 350px;
   text-align: center;
 }
 
 .what-text {
   color: #fff;
   font-size: 20px;
-  padding: 0 0 0 350px;
+  margin: 0 0 0 350px;
   text-align: center;
+}
+
+.inner-work {
+  padding:60px 0 70px 0;
 }
 
 .work-h3 {
   font-family: 'Raleway';
-  padding: 60px 0 40px 0;
+  margin-bottom: 40px;
 }
 
 .work-img-flex {
   display:flex;
   flex-wrap:wrap;
-  justify-content:center;
   align-items:center;
 }
 
 .work-img {
   box-sizing: border-box;
-  margin:0 100px 80px 0;
+  margin-left: 100px;
+  opacity: 0.7;
   width: 33.33333333%;
   width:calc(33.3333333% - 200px / 3)
 }
 
-.work-img:nth-child(3n){
-margin-right:0;
+.work-img:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all  0.3s ease;
+}
+
+.work-img:first-child {
+  margin-left:0;
+}
+.work-img:nth-child(4) {
+  margin-left:0;
+}
+
+.work-img:nth-child(n+4) {
+  margin-top: 80px;
 }
 
 .work-flex {
   display: flex;
   justify-content: center;
-  padding: 10px 0 70px 0;
+  margin-top:90px;
 }
 
 .work-text {
@@ -161,10 +182,13 @@ margin-right:0;
   transition: all  0.3s ease;
 }
 
+.inner-skills {
+  padding: 70px 0 100px 0;
+}
+
 .skills-h3 {
   color: #fff;
   font-family: 'Raleway';
-  padding: 70px;
 }
 
 .wrap-skills {
@@ -180,7 +204,6 @@ margin-right:0;
 .skills-flex-wrap {
   display: flex;
   justify-content: center;
-  padding: 0 0 100px 0;
 }
 
 .skills-flex {
@@ -192,7 +215,7 @@ margin-right:0;
   margin-left: 0;
 }
 
-.nav {
+.inner-nav {
   padding: 200px 0 200px 0;
 }
 
