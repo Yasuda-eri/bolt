@@ -145,10 +145,8 @@ h3 {
   transition: all  0.3s ease;
 }
 
-.work-img:first-child {
-  margin-left:0;
-}
-.work-img:nth-child(4) {
+.work-img:first-child,
+.work-img:nth-child(3n+4) {
   margin-left:0;
 }
 
