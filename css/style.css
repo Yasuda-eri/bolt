@@ -236,9 +236,12 @@ h3 {
   width: 100%;
 }
 
+.inner-footer {
+  padding: 20px 0px 25px 0px;
+}
+
 .footer-copy {
   color: #fff;
   font-size: 12px;
-  padding: 20px 0px 25px 0px;
   float: right;
 }
