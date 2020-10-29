@@ -93,7 +93,6 @@ h2 {
   float: right;
 }
 
-
 .what-h2 {
   box-sizing: border-box;
   color: #fff;
@@ -120,6 +119,7 @@ h2 {
 .work-img-flex {
   display:flex;
   flex-wrap:wrap;
+  font-size: 0;
   align-items:center;
 }
 
